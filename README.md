@@ -2,7 +2,19 @@
 
 A GitHub Copilot CLI, written in Go.
 
+Inspired by [B00TK1D/copilot-api](https://github.com/B00TK1D/copilot-api).
+
 ![Example](./docs/example-glow.png)
+
+## Disclaimer
+
+> [!IMPORTANT]
+> This tool is not affiliated with GitHub, Microsoft or OpenAI.
+> It might violate the GitHub Copilot terms of service - use at your own risk.
+>
+> This tool requires an active [GitHub Copilot](https://github.com/features/copilot) subscription
+> (10$/month for individuals).
+
 
 ## Example
 

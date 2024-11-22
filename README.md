@@ -74,3 +74,32 @@ Check `gopilot-cli -h` for more information or refer to the examples above.
 > You can pipe the output of the `gopilot-cli code` subcommand to [`glow`](https://github.com/charmbracelet/glow)
 > to render the markdown code blocks in your terminal.
 
+
+## Suggested shell integrations
+
+### `ktip`
+
+Provides answers to your Kubernetes questions.
+
+![ktip example](./docs/ktip.png)
+
+Add this to your `.zshrc` (or `.bashrc`):
+```zsh
+function ktip(){
+	gopilot-cli -l Kubernetes -m 500 -p 0.9 code "$1"
+}
+```
+
+### `gotip`
+
+Provides answers to your Go questions.
+
+![gotip example](./docs/gotip.png)
+
+Add this to your `.zshrc` (or `.bashrc`):
+```zsh
+function gotip(){
+	gopilot-cli -l Go -m 500 -p 0.9 code "$1" | glow
+}
+```
+

@@ -2,6 +2,7 @@
 
 A GitHub Copilot CLI, written in Go.
 
+![Example](./docs/example-glow.png)
 
 ## Example
 

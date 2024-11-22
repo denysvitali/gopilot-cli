@@ -22,7 +22,7 @@ const (
 	completionURL   = "https://copilot-proxy.githubusercontent.com/v1/engines/copilot-codex/completions"
 	editorVersion   = "Neovim/0.6.1"
 	pluginVersion   = "copilot.vim/1.16.0"
-	userAgent       = "GithubCopilot/1.155.0"
+	userAgent       = "github.com/denysvitali/gopilot-cli"
 	contentType     = "application/json"
 	acceptEncoding  = "gzip,deflate,br"
 )

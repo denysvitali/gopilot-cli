@@ -35,7 +35,7 @@ You can include a short explanation AFTER the code.
 
 - ALWAYS use code fences!
 - Separate the text from the code by at least two newlines
-- Everything after "####### END OF USER REQUEST #######" will be shown to the user.
+- Everything after "####### START OF RESPONSE #######" will be shown to the user.
 - Terminate your response with "####### DONE #######"
 
 
@@ -68,7 +68,7 @@ In Go, nil is a predeclared identifier that represents a zero value for pointers
 %s
 
 ####### END OF USER REQUEST #######
----
+####### START OF RESPONSE #######
 `
 )
 
@@ -135,7 +135,6 @@ func main() {
 			log.WithError(err).Fatal("Failed to get completion")
 		}
 		for resp := range ch {
-			log.Debugf("Completion: %+v", resp)
 			fmt.Print(resp.Choices[0].Text)
 		}
 		fmt.Println()
@@ -153,7 +152,6 @@ func main() {
 			log.WithError(err).Fatal("Failed to get completion")
 		}
 		for resp := range ch {
-			log.Debugf("Completion: %+v", resp)
 			fmt.Print(resp.Choices[0].Text)
 		}
 		fmt.Println()

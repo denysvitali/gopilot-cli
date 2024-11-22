@@ -21,7 +21,7 @@ Inspired by [B00TK1D/copilot-api](https://github.com/B00TK1D/copilot-api).
 ### `query`
 
 ```bash
-gopilot-cli query "How do I get the number of CPUs?"                                                                                                      (master !)
+gopilot-cli query "How do I get the number of CPUs?"
 ```
 
 ```plain

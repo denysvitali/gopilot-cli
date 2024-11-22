@@ -86,7 +86,7 @@ Provides answers to your Kubernetes questions.
 Add this to your `.zshrc` (or `.bashrc`):
 ```zsh
 function ktip(){
-	gopilot-cli -l Kubernetes -m 500 -p 0.9 code "$1"
+	gopilot-cli -l Kubernetes -m 500 -p 0.9 code "$1" | glow
 }
 ```
 

@@ -30,16 +30,16 @@ type errMsg struct {
 	err error
 }
 
-func initialModel() model {
+func initialModel() *model {
 	s := spinner.New()
 	s.Spinner = spinner.Dot
 	s.Style = lipgloss.NewStyle().Foreground(lipgloss.Color("205"))
-	return model{
+	return &model{
 		spinner: s,
 	}
 }
 
-func (m model) Init() tea.Cmd {
+func (m *model) Init() tea.Cmd {
 	return tea.Batch(
 		m.spinner.Tick,
 		func() tea.Msg {
@@ -52,7 +52,7 @@ func (m model) Init() tea.Cmd {
 	)
 }
 
-func (m model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
+func (m *model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 	checkAuthWrapper := func() tea.Cmd {
 		return func() tea.Msg {
 			done, err := m.c.CheckAuthStatusCmd(m.deviceCode.DeviceCode)
@@ -99,7 +99,7 @@ func (m model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 	return m, nil
 }
 
-func (m model) View() string {
+func (m *model) View() string {
 	if m.err != nil {
 		return fmt.Sprintf("Error: %s\n", m.err)
 	}

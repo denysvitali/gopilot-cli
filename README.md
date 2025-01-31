@@ -6,6 +6,8 @@ Inspired by [B00TK1D/copilot-api](https://github.com/B00TK1D/copilot-api).
 
 ![Example](./docs/example-glow.png)
 
+[![Build Status](https://github.com/denysvitali/gopilot-cli/actions/workflows/ci.yml/badge.svg)](https://github.com/denysvitali/gopilot-cli/actions)
+
 ## Disclaimer
 
 > [!IMPORTANT]
@@ -115,3 +117,6 @@ function gotip(){
 }
 ```
 
+## Continuous Integration
+
+This project uses GitHub Actions for Continuous Integration (CI). The CI workflow is defined in the `.github/workflows/ci.yml` file and is triggered on push and pull request events to the `main` branch. The workflow sets up a Go environment, installs dependencies, runs tests, and compiles the binary to ensure that the code is tested and the binary is compiled on every push and pull request to the `main` branch.

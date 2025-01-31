@@ -116,7 +116,3 @@ function gotip(){
 	gopilot-cli -l Go -m 500 -p 0.9 code "$1" | glow
 }
 ```
-
-## Continuous Integration
-
-This project uses GitHub Actions for Continuous Integration (CI). The CI workflow is defined in the `.github/workflows/ci.yml` file and is triggered on push and pull request events to the `main` branch. The workflow sets up a Go environment, installs dependencies, runs tests, and compiles the binary to ensure that the code is tested and the binary is compiled on every push and pull request to the `main` branch.

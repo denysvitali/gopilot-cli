@@ -6,6 +6,8 @@ Inspired by [B00TK1D/copilot-api](https://github.com/B00TK1D/copilot-api).
 
 ![Example](./docs/example-glow.png)
 
+[![Build Status](https://github.com/denysvitali/gopilot-cli/actions/workflows/ci.yml/badge.svg)](https://github.com/denysvitali/gopilot-cli/actions)
+
 ## Disclaimer
 
 > [!IMPORTANT]
@@ -114,4 +116,3 @@ function gotip(){
 	gopilot-cli -l Go -m 500 -p 0.9 code "$1" | glow
 }
 ```
-
